@@ -1,0 +1,31 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+	link(rel="stylesheet", href="style.css")
+
+block body
+	.body.body02
+		+header
+
+		section
+			.boxCapa
+				video(src="../../assets/video/video3.mp4" muted loop autoplay) 
+				.boxTitle
+					h2.textNeon Caça Palavras
+					+image('detalplay.png', 'detal')
+			.boxText
+				h2 Regras do Jogo
+				p O objetivo do jogo é localizar o maior número possível de palavras relacionadas aos cursos online (EADs) da Febraban Educação.
+				p As palavras relacionadas aos nossos cursos online estarão posicionadas em direções variadas (horizontal, vertical, diagonal e ao contrário).
+				p Você terá exatamente <b>60 segundos</b> para localizar e marcar o maior número possível de palavras da lista.
+				p Para marcar uma palavra encontrada, basta clicar e arrastar sobre as letras que compõem a palavra.
+				p <b>Preparado? Então, vamos lá!</b>
+
+			.boxButton
+				button.initGame.btnNeon
+					h2 Play
+		
+		+footer
+		
+block scripts
+	script(src="script.js")

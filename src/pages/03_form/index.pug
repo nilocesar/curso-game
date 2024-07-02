@@ -1,0 +1,49 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+	link(rel="stylesheet", href="style.css")
+
+block body
+	.body.body02
+		+header
+
+		section.sec1
+			h3.textDig Para começar, forneça as informações para aparecer no nosso ranking!
+			.form
+				.input-wrapper
+					label(for="nome") 
+						p *Nome: 
+					input#name(type="text")
+					small.alertName Preencha o nome. 
+				.input-wrapper
+					label(for="email") 
+						p *E-mail: 
+					input#email(type="mail")
+					small.alertEmail E-mail invalido.
+				.input-wrapper
+					label(for="empresa") 
+						p Empresa: 
+					input#empresa(type="text")
+				.flex
+					.boxInput
+						input#informativo.check(type="checkbox")
+					p Quero receber as informações da Febraban Educação.
+				.boxBlack
+					button.cadastro.btnNeon
+						h2 Cadastrar
+		
+		section.sec2
+			.flex 
+				.text
+					h2 Caso prefira!
+					p Acesse o QR Code e cadastre-se no seu celular usando o número abaixo.
+					h1.codeForm(contenteditable, spellcheck="false") 00
+
+
+				+image('qrform.svg', 'qr')
+		footer
+			button(onclick='navigate.goto("02_menu")')
+				p Menu
+		
+block scripts
+	script(src="script.js")

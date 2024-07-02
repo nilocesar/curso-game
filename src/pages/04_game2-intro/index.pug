@@ -1,0 +1,32 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+	link(rel="stylesheet", href="style.css")
+
+block body
+	.body.body02
+		+header
+
+		section
+			.boxCapa
+				video(src="../../assets/video/video2.mp4" muted loop autoplay) 
+				.boxTitle
+					h2.textNeon Qual é a Certificação?
+					+image('detalplay.png', 'detal')
+			.boxText
+				h2 Regras do Jogo
+				p O objetivo do jogo é descobrir o nome da Certificação Febraban Educação utilizando as dicas fornecidas e selecionando as letras corretas.
+				p Para isso, você receberá um total de 3 dicas, uma de cada vez.
+				p A cada dica, você deverá selecionar uma letra que acredita fazer parte do nome da Certificação.
+				p Se a letra estiver correta, ela será revelada na posição correspondente na palavra oculta. Agora, se a letra estiver incorreta, ela não aparecerá e o participante deve tentar outra letra na próxima dica.
+				p Após a terceira dica, o participante terá <b>15 segundos</b> para completar o nome da nossa Certificação Febraban.
+				p <b>Preparado? Então, vamos lá!</b>
+
+			.boxButton
+				button.initGame.btnNeon
+					h2 Play
+		
+		+footer
+		
+block scripts
+	script(src="script.js")

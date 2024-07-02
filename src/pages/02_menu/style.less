@@ -1,0 +1,89 @@
+@import '../../less/includes/colors.less';
+@import '../../less/includes/fonts.less';
+
+.body {
+    background-color: @color-02;
+    position: relative;
+
+    .sec1 {
+        background-color: @color-white;
+        padding: 7em 18em 9.5em;
+        p {
+            font-size: 3em;
+            margin: 0;
+        }
+        b {
+            font-weight: 600;
+        }
+        p + p {
+            margin: 1em 0 0;
+        }
+    }
+
+    .sec2 {
+        .box {
+            background-color: @color-01;
+            width: 72em;
+            height: 6em;
+            margin: -3em auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                text-transform: uppercase;
+                color: @color-white;
+                margin: 0;
+                font-size: 3em;
+                text-align: center;
+            }
+        }
+    }
+
+    .sec2 {
+        background-image: url(../../assets/img/detalmenu.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 139em;
+        button {
+            margin: 4em 0 0;
+            position: relative;
+            width: 74em;
+            .boxVideo {
+                width: 70em;
+                border-bottom: 1em solid @color-01;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                padding: 0;
+                video {
+                    width: 100%;
+                }
+            }
+            .img {
+                width: 60em;
+                position: relative;
+                z-index: 1;
+            }
+            h2 {
+                color: @color-white;
+                font-size: 5em;
+                margin: .2em 0 0;
+                text-transform: uppercase;
+                margin: .4em 0 0;
+            }
+        }
+    }
+
+    footer {
+        button {
+            display: none;
+        }
+        &::before {
+            background-color: @color-white;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+	link(rel="stylesheet", href="style.css")
+
+block body
+	.body.body02
+		+header
+		+topgame('Caça Palavras')
+		
+		.containerParent
+			#game
+
+			ul.listPalavras
+
+		+footer
+
+		
+block scripts
+	+scriptScripts('countdownTimer.js')
+	+scriptScripts('phaser.min.js')
+	+scriptScripts('wordfind.js')
+	script(src="script.js")

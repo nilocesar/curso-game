@@ -1,0 +1,27 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+	link(rel="stylesheet", href="style.css")
+
+block body
+	.body.body02#app
+		+header
+
+		+topgame('Jogo da Memória')
+
+		.gameBase
+			p Os nossos especialistas compartilham tudo o que você precisa saber sobre o mercado financeiro para o seu desenvolvimento profissional.
+			.cards
+				.card(v-for="card in cards", :class="{ flipped: card.flipped, found: card.found }", @click="flipCard(card)")
+					.back
+					.front(:style="{ backgroundImage: 'url(' + card.image + ')' }")
+
+			
+		
+		+footer
+		
+block scripts
+	+scriptScripts('countdownTimer.js')
+	+scriptScripts('vue.min.js')
+	+scriptScripts('lodash.min.js')
+	script(src="script.js")
