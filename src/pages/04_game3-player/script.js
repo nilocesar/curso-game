@@ -5,31 +5,20 @@ const measures = {
 
 const allOrientations = [
   "horizontal",
-  "horizontalBack",
+  // "horizontalBack",
   "vertical",
-  "verticalUp",
+  // "verticalUp",
   "diagonal",
-  "diagonalUp",
-  "diagonalBack",
-  "diagonalUpBack",
+  // "diagonalUp",
+  // "diagonalBack",
+  // "diagonalUpBack",
 ];
 
 const gameCurrent = 3;
 const timeGame = 60 * 1; ///60
 let workAll = 0;
 const pointMulti = 10;
-const definedWords = [
-  "Compliance",
-  "Crédito",
-  "ESG",
-  "LGPD",
-  "SAC",
-  "PLDFT",
-  "Libras",
-  "Sustentabilidade",
-  "Preparatório",
-  "Correspondentes",
-];
+const definedWords = ["latim", "manuscrito", "layout", "template"];
 
 $(document).ready(function () {
   gameWordSearch();

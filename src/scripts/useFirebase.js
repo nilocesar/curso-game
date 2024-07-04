@@ -1,12 +1,21 @@
+// window.firebaseConfig = {
+//   apiKey: "AIzaSyC6r6ivnQ7Lx1Hikb_YNdQxf3lj2XOGkWA",
+//   authDomain: "febraban-v1.firebaseapp.com",
+//   databaseURL: "https://febraban-v1-default-rtdb.firebaseio.com",
+//   projectId: "febraban-v1",
+//   storageBucket: "febraban-v1.appspot.com",
+//   messagingSenderId: "824190571881",
+//   appId: "1:824190571881:web:370fe41aa5d1ece5ab19f8",
+//   measurementId: "G-1NV8HNSJZJ",
+// };
+
 window.firebaseConfig = {
-  apiKey: "AIzaSyC6r6ivnQ7Lx1Hikb_YNdQxf3lj2XOGkWA",
-  authDomain: "febraban-v1.firebaseapp.com",
-  databaseURL: "https://febraban-v1-default-rtdb.firebaseio.com",
-  projectId: "febraban-v1",
-  storageBucket: "febraban-v1.appspot.com",
-  messagingSenderId: "824190571881",
-  appId: "1:824190571881:web:370fe41aa5d1ece5ab19f8",
-  measurementId: "G-1NV8HNSJZJ",
+  apiKey: "AIzaSyDO8szM3aElGhru1hPFGDPmPqoqLvFtb40",
+  authDomain: "lorem-game-portfolio.firebaseapp.com",
+  projectId: "lorem-game-portfolio",
+  storageBucket: "lorem-game-portfolio.appspot.com",
+  messagingSenderId: "773271777029",
+  appId: "1:773271777029:web:cee69556db81890ec6d16c"
 };
 
 async function getDocumentsOrderedByField(collectionDB, fieldName) {

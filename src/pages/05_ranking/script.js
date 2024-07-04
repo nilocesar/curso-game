@@ -71,8 +71,8 @@ const controlRanking = (results) => {
 
   const gameName = {
     game1: "Cursos ao Vivo",
-    game2: "Cerficação",
-    game3: "Cursos Online (EAD)",
+    game2: "Curso Blends",
+    game3: "Cursos Online",
   };
 
   // Atualiza o texto da pontuação atual no elemento com a classe 'currentScore'
